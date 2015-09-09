@@ -17,14 +17,17 @@ void setup() {
 }
 
 // Next frame. //
-void draw() {
+void draw() 
+{ ellipse(250, 250, 100, 100);                // added values to keep circle still
+  fill(0);
+  text("Slasher",225,250);
+  fill(255);                                 // couldn't figure out how to keep color change
   text( title, 10, 10 );
   text( subtitle, width/2, 10 );
   text( author, 10, height-10 );
   text( w+"x"+h, width/2,height-10 );
   //
-  ellipse(x, y, w, h);
-}
+  }
 
 
 //  Handle mouse clicks //
